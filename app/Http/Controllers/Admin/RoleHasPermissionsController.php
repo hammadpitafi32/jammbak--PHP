@@ -31,7 +31,6 @@ class RoleHasPermissionsController extends Controller
      */
     public function index(IndexRoleHasPermission $request)
     {
-
         // create and AdminListing instance for a specific model and
         $data = AdminListing::create(RoleHasPermission::class)->processRequestAndGet(
             // pass the request with params
@@ -43,7 +42,7 @@ class RoleHasPermissionsController extends Controller
             // set columns to searchIn
             ['']
         );
-        die('sss');
+
         if ($request->ajax()) {
             if ($request->has('bulk')) {
                 return [

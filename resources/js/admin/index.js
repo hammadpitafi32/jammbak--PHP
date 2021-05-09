@@ -4,3 +4,4 @@ import './profile-edit-password';
 import './permission';
 import './role';
 import './role-has-permission';
+import './user';

@@ -48,3 +48,18 @@ $factory->define(App\Models\RoleHasPermission::class, static function (Faker\Gen
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\User::class, static function (Faker\Generator $faker) {
+    return [
+        'created_at' => $faker->dateTime,
+        'deleted_at' => null,
+        'email' => $faker->email,
+        'email_verified_at' => $faker->dateTime,
+        'name' => $faker->firstName,
+        'password' => bcrypt($faker->password),
+        'remember_token' => null,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

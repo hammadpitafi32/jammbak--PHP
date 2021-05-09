@@ -81,5 +81,24 @@ return [
         ],
     ],
 
+    'user' => [
+        'title' => 'Users',
+
+        'actions' => [
+            'index' => 'Users',
+            'create' => 'New User',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'email' => 'Email',
+            'email_verified_at' => 'Email verified at',
+            'name' => 'Name',
+            'password' => 'Password',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
